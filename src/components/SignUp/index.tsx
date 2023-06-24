@@ -12,7 +12,7 @@ const SignupPage: React.FC = () => {
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:4600/api/user/signup";
+      const url = "https://mern-backend-thmt.onrender.com/api/user/signup";
       const res = await axios.post(url, {
         first_name: firstName,
         last_name: lastName,

@@ -11,7 +11,7 @@ const LoginPage: React.FC = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:4600/api/user/login";
+      const url = "https://mern-backend-thmt.onrender.com/api/user/login";
       const res = await axios.post(url, {
         email,
         password,

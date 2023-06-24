@@ -28,7 +28,7 @@ export const HomePage = () => {
   };
 
   const config: AxiosRequestConfig = {
-    url: "http://localhost:4600/api/item",
+    url: "https://mern-backend-thmt.onrender.com/api/item",
     method: "get",
     headers: {
       Authorization: `Bearer ${token}`,
