@@ -20,9 +20,8 @@ const SignupPage: React.FC = () => {
         password,
       });
       navigate("/login");
-      console.log("🚀 ~ file: index.tsx:24 ~ res:", res);
     } catch (error) {
-      console.log("🚀 ~ file: index.tsx:19 ~ error:", error);
+      console.warn("error in sign up page : ", error);
     }
   };
 

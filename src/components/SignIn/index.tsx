@@ -17,10 +17,9 @@ const LoginPage: React.FC = () => {
         password,
       });
       localStorage.setItem("token", res.data.token);
-      console.log("🚀 ~ file: index.tsx:24 ~ res:", res.data.token);
       navigate("/");
     } catch (error) {
-      console.log("🚀 ~ file: index.tsx:19 ~ error:", error);
+      console.log("error in login page : ", error);
     }
   };
 

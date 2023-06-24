@@ -10,12 +10,10 @@ export const HomePage = () => {
   const token = localStorage.getItem("token");
 
   const handleOrderNow = (title: string) => {
-    // Handle the "Order Now" button click
     console.log(`Order Now: ${title}`);
   };
 
   const handleAddToCart = (title: string) => {
-    // Handle the "Add to Cart" button click
     console.log(`Add to Cart: ${title}`);
   };
 
@@ -46,7 +44,7 @@ export const HomePage = () => {
           console.error(error);
         });
     } catch (error) {
-      console.log("🚀 ~ file: index.tsx:19 ~ error:", error);
+      console.log("Error in Home page getting Items error : ", error);
     }
   };
 
