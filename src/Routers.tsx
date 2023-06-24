@@ -8,16 +8,9 @@ export const Routers = () => {
   const token = localStorage.getItem("token");
   return (
     <Routes>
-      {!token ? (
-        <>
-          <Route path="/signup" element={<SignupPage />} />
-          <Route path="/login" element={<LoginPage />} />
-        </>
-      ) : (
-        <>
-          <Route path="/" element={<HomePage />} />
-        </>
-      )}
+      <Route path="/signup" element={<SignupPage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/" element={<HomePage />} />
     </Routes>
   );
 };
