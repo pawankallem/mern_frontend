@@ -1,6 +1,6 @@
 # Shopping website
 
-Our site is deployed here https://pai-internationalclone.herokuapp.com/ Please Check it out
+Our site is deployed here https://mern-frontend-neon.vercel.app/login Please Check it out
 
 This is a working Shopping website, developed to practice and showcase the fundamental aspects of website development. By implementing JavaScript, React.js, TypeScript, Tailwind CSS, Node.js, MongoDB, and Express.js, I have gained hands-on experience in building a functional website. The project includes features like login, signup, home pages, and backend authentication, all of which are working as expected. This endeavor has not only allowed me to learn new coding techniques but also provided insights into creating interactive user interfaces, managing authentication processes, and utilizing backend technologies effectively.
 ## Uses
