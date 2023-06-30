@@ -1,12 +1,13 @@
-# Getting Started with Create React App
+# Shopping website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our site is deployed here https://mern-frontend-neon.vercel.app/login Please Check it out
 
-## Available Scripts
+This is a working Shopping website, developed to practice and showcase the fundamental aspects of website development. By implementing JavaScript, React.js, TypeScript, Tailwind CSS, Node.js, MongoDB, and Express.js, I have gained hands-on experience in building a functional website. The project includes features like login, signup, home pages, and backend authentication, all of which are working as expected. This endeavor has not only allowed me to learn new coding techniques but also provided insights into creating interactive user interfaces, managing authentication processes, and utilizing backend technologies effectively.
+## Uses
 
-In the project directory, you can run:
+We can login, signup, after succefull login only it redirects to Home page and fetches the home page data.
 
-### `yarn start`
+### `Pages Build`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
