@@ -1,11 +1,13 @@
 import NavBar from "../Navbar";
 import { useEffect, useState } from "react";
-import axios, { AxiosRequestConfig } from "axios";
 import { useNavigate } from "react-router-dom";
+import { useStoreDispatch, useStoreSelector } from "../../store/hooks";
+import { fetchItems } from "../../features/itemsSlice";
 
 export const HomePage = () => {
   const navigate = useNavigate();
-  const [items, setItems] = useState<any>([]);
+  const dispatch = useStoreDispatch();
+  const items = useStoreSelector((state) => state.item.data);
   const [hoveredProduct, setHoveredProduct] = useState<string | null>(null);
   const token = localStorage.getItem("token");
 
@@ -25,24 +27,9 @@ export const HomePage = () => {
     setHoveredProduct(null);
   };
 
-  const config: AxiosRequestConfig = {
-    url: "https://mern-backend-thmt.onrender.com/api/item",
-    method: "get",
-    headers: {
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-    },
-  };
-
   const handleFetchItems = async () => {
     try {
-      axios(config)
-        .then((response) => {
-          setItems(response.data);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+      await dispatch(fetchItems());
     } catch (error) {
       console.log("Error in Home page getting Items error : ", error);
     }
